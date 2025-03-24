@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-placeholder {
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 4px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999; /* Light grey text */
+    font-size: 14px;
+    font-weight: bold;
+    animation: blink 1.5s infinite; /* Blinking animation */
+  }
+  
+  /* Blinking Animation */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
