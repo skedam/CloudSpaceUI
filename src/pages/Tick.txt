@@ -17,12 +17,10 @@ const Tickets: React.FC = () => {
 
   return (
     <ContentLayout>
-      <ChatUI />
-
-      <div className={styles.container}>
-      
-        <div className={styles['left-box']}>
       {/* <ColumnLayout columns={2}> */}
+      <ChatUI />
+      <div>
+        <Box padding="m">
        
           <div className="flex justify-between mb-4">
             <p className="text-lg font-semibold">TK1872838273</p>
@@ -70,9 +68,9 @@ const Tickets: React.FC = () => {
         { label: "Option 4", value: "4" },
         { label: "Option 5", value: "5" }
       ]} />
-    </div>
-         <div className={styles['right-box']}>
-	
+    
+        </Box>
+        <Box padding="m">
           <Tabs
             tabs={[
               { label: 'Patient Info', id: 'patient-info', content: <Box padding="m">
@@ -98,7 +96,8 @@ const Tickets: React.FC = () => {
               </Box> },
             ]}
           />
- </div>
+        </Box>
+
       
       </div>
       <ColumnLayout columns={2}>
